@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Flask UI</title>
+</head>
+<body>
+    <form method="POST">
+        <input type="text" name="user_input" placeholder="Enter something..." required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if user_input %}
+        <p>You entered: {{ user_input }}</p>
+    {% endif %}
+</body>
+</html>
